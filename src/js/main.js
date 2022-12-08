@@ -1,12 +1,7 @@
-// import ReactDOM from 'react-dom'.
+import TabNav from './modules/tab-navegation';
 
-import helloWorld from './modules/helloWorld';
+// const TabNav = new TabNav('');
+// TabNav.init();
 
-
-
-console.log(helloWorld());
-
-// console.log('dae')
-
-// Para usar React, descomente:
-// ReactDOM.render(<div> Isso aqui é uma app React </div>, document.getElementById('react-app'))
+const tabNav = new TabNav('.nav-options > li', '.content-support > section')
+tabNav.init();

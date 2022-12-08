@@ -22,21 +22,20 @@
         flex-direction: column;
         gap: 25px;
         li {
-            a {
-                font-size: 0.9rem;
-                text-transform: uppercase;
-                letter-spacing: 0.2rem;
-                color: $gray-default;
-                font-weight: 500;
-                display: flex;
-                align-items: center;
-                gap: 15px;
-                transition: 0.3s ease;
-                &:hover {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            color: $gray-default;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: 0.3s ease;
+            cursor: pointer;
+            &:hover {
+                color: $yellow-default;
+                img {
                     color: $yellow-default;
-                    img {
-                        color: $yellow-default;
-                    }
                 }
             }
             img {
@@ -47,5 +46,15 @@
     }
     .content-support {
         background: $dark-gray;
+        padding: 40px 50px;
+        color: $gray-default;
+        section {
+            display: none;
+        }
     }
+}
+
+.active {
+    display: block !important;
+    border: 1px solid red;
 }
