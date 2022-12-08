@@ -7,5 +7,5 @@ import Modal from './modules/modal';
 const tabNav = new TabNav('.nav-options > li', '.content-support > section')
 tabNav.init();
 
-const modalConfig = new Modal('')
+const modalConfig = new Modal('.btn-modal-config', '.close-modal', '.modal');
 modalConfig.init();

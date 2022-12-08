@@ -14,7 +14,7 @@ export default class Modal {
 
     //ToggleModal
     toggleModal() {
-        this.containerModal.classList.toggle('ativo');
+        this.containerModal.classList.toggle('modal--active');
     }
 
 

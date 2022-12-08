@@ -1,5 +1,5 @@
 .modal {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -88,5 +88,8 @@
                 justify-content: space-between;
             }
         }
+    }
+    &--active {
+        display: flex !important;
     }
 }
