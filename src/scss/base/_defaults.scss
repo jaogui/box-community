@@ -1,35 +1,45 @@
+body {
+    margin: unset;
+}
+
 * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-ul, ol, li, h1, h2, h3, h4, h5, h6, p {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-  padding-inline-end: 0;
-  margin-bottom: 0;
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    margin-bottom: 0;
 }
-
 
 a {
-  color: unset;
-  &:hover {
     color: unset;
-    text-decoration: none;
-  }
+    &:hover {
+        color: unset;
+        text-decoration: none;
+    }
 }
 
 button {
-  background-color: unset;
-  border: unset;
-  color: inherit;
-  font-weight: inherit;
-  text-transform: inherit;
+    background-color: unset;
+    border: unset;
+    color: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
 }
-
 
 label {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
-
