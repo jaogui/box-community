@@ -57,3 +57,47 @@
 .active {
     display: block !important;
 }
+
+.content-download {
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+    .content-download-item {
+        padding: 10px;
+        height: 120px;
+        width: 200px;
+        border: 1px solid $gray-default;
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+        ul {
+            font-size: 0.8rem;
+            padding-top: 5px;
+            li {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            span {
+                display: flex;
+                gap: 5px;
+                a {
+                    color: $yellow-default;
+                }
+            }
+        }
+        &__desc {
+            max-height: 30px;
+            overflow: hidden;
+            padding-bottom: 5px;
+            line-height: 1rem;
+        }
+        &__title {
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            font-size: 0.9rem;
+        }
+    }
+}
