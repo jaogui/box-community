@@ -49,5 +49,44 @@
     }
     &__body {
         height: 100%;
+        select {
+            border-radius: 4px;
+            padding: 7px 16px;
+            line-height: 14px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid $gray-default;
+            background: transparent;
+            color: $gray-default;
+            width: 100%;
+            max-width: 250px;
+            &:focus {
+                border: 1px solid $yellow-light;
+            }
+        }
+    }
+    &__list-config {
+        li {
+            list-style: none;
+            p {
+                border-bottom: 1px solid $gray-default;
+                text-transform: uppercase;
+                padding: 10px 0px;
+                display: flex;
+                flex-direction: column;
+                font-size: 1.2rem;
+                letter-spacing: 0.1rem;
+                color: $gray-default;
+                margin-bottom: 10px;
+            }
+            span {
+                padding: 10px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
     }
 }
