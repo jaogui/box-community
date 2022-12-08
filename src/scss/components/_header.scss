@@ -1,6 +1,7 @@
 .header {
     background: $dark-main;
     color: $gray-default;
+    border-bottom: 1px solid $gray-default;
     &__logo {
         height: 40px;
         width: 170px;
