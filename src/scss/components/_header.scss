@@ -39,27 +39,25 @@
         color: $gray-default;
         opacity: 0.6;
     }
-}
-
-.header-options {
-    display: flex;
-    gap: 35px;
-    list-style: none;
-    &__item {
+    .header-options {
         display: flex;
-        align-items: center;
-        height: 20px;
-        width: 20px;
-        img {
-            color: $gray-default;
-            max-width: 20px;
+        gap: 35px;
+        list-style: none;
+        &__item {
+            display: flex;
+            align-items: center;
+            height: 20px;
+            width: 20px;
+            img {
+                color: $gray-default;
+                max-width: 20px;
+            }
         }
     }
-}
-
-.header-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 50px;
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 50px;
+    }
 }
