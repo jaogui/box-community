@@ -5,20 +5,24 @@
     <link rel="stylesheet" href="/dist/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;400;600;900&display=swap" rel="stylesheet">
-</head>
 
+</head>
 
 <body>
     <header class="header">
         <div class="header-wrapper">
-            <div class="header__logo">
+            <a href="" class="header__logo">
                 <img src="./src/imgs/logo.svg" alt="logo-main">
-            </div>
+                <p> Box Community</p>
+            </a>
             <input type="text" class="header__search" placeholder="Procure em nossa comunidade">
             <ul class="header-options">
-                <li class="header-options__item"><img src="/src/imgs/icon-help.png" alt="icon help"></li>
-                <li class="header-options__item"><img src="/src/imgs/icon-gear.png" alt="icon duvidas"></li>
+                <!-- <li class="header-options__item">
+                    <a href=""><img src="/src/imgs/icon-help.png" alt="icon help"></a>
+                </li> -->
+                <li class="header-options__item">
+                    <a href=""><img src="/src/imgs/icon-gear.png" alt="icon duvidas"></a>
+                </li>
             </ul>
         </div>
     </header>
@@ -26,20 +30,40 @@
     <main class="content">
         <div class="content__grid">
             <nav class="content__navbar">
-                <ul>
+                <ul class="nav-options">
                     <li>
-                        <a href="">
-                            <img src="/src/imgs/icon-lined.png" alt=""> Painel
-                        </a>
+                        <img src="/src/imgs/icon-feed.png" alt="icon painel"> Home
+
                     </li>
                     <li>
-                        item nav 2
+
+                        <img src="/src/imgs/icon-download.png" alt="icon painel"> Downloads
+
+                    </li>
+
+                    <li>
+
+                        <img src="/src/imgs/icon-lined.png" alt="icon painel"> Painel
+
                     </li>
                 </ul>
 
 
             </nav>
-            <p>teste2</p>
+            <div class="content-support">
+                <section>
+                    HOME
+                </section>
+                <section>
+
+
+                    Download
+                </section>
+
+                <section>
+                    Painel
+                </section>
+            </div>
         </div>
 
     </main>

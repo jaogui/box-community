@@ -1,12 +1,28 @@
 .header {
     background: $dark-main;
     color: $gray-default;
+    border-bottom: 1px solid $dark-gray;
     &__logo {
+        font-family: 'Bebas Neue', cursive;
         height: 40px;
-        width: 170px;
+        color: $yellow-default;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        max-width: 200px;
+        width: 100%;
         img {
             width: 100%;
+            max-width: 50px;
             height: 100%;
+            max-height: 40px;
+        }
+        p {
+            word-wrap: normal;
+            font-size: 1.4rem;
+            letter-spacing: 0.1rem;
+            max-width: 100%;
+            width: 100%;
         }
     }
     &__search {
