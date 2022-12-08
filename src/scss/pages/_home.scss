@@ -57,3 +57,20 @@
 .active {
     display: block !important;
 }
+
+.content-download {
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+    }
+    &__item {
+        padding: 10px;
+        height: 120px;
+        width: 200px;
+        border: 1px solid $gray-default;
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    }
+}
