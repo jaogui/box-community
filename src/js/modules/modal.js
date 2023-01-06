@@ -4,7 +4,6 @@ export default class Modal {
         this.btnFechar = document.querySelector(btnFechar)
         this.containerModal = document.querySelector(containerModal)
 
-
         //Bind this ao "callback" para
         //fazer referência ao objeto da classe
         this.eventToggleModal = this.eventToggleModal.bind(this);
@@ -16,7 +15,6 @@ export default class Modal {
     toggleModal() {
         this.containerModal.classList.toggle('modal--active');
     }
-
 
     //Adiciona o evento de toggle no modal.
     eventToggleModal(event) {
@@ -41,7 +39,6 @@ export default class Modal {
     init() {
         if (this.btnAbrir && this.btnFechar && this.containerModal) {
             this.addModalEvents();
-            console.log(this.btnFechar)
         }
         return this;
     }
