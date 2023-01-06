@@ -41,6 +41,7 @@ export default class Modal {
     init() {
         if (this.btnAbrir && this.btnFechar && this.containerModal) {
             this.addModalEvents();
+            console.log(this.btnFechar)
         }
         return this;
     }
