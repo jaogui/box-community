@@ -101,10 +101,25 @@
     }
 }
 
-.modal-download {
+.modal-download,
+.modal-upload {
     input {
         margin: 10px 0px;
         width: 100%;
         max-width: 400px;
+    }
+    input[type="file"] {
+        display: none;
+    }
+    .file-upload {
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 12px 10px;
+        line-height: 14px;
+        font-size: 14px;
+        display: flex;
+        border: 1px solid $gray-default;
+        width: 100%;
+        max-width: 450px;
     }
 }

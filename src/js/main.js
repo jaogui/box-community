@@ -12,3 +12,6 @@ modalConfig.init();
 
 const modalDownload = new Modal('.btn-download', '.close-modal', '.modal-download');
 modalDownload.init();
+
+const modalUpload = new Modal('.btn-upload', '.close-modal', '.modal-upload');
+modalUpload.init();
