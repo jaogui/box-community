@@ -7,5 +7,8 @@ import Modal from './modules/modal';
 const tabNav = new TabNav('.nav-options > li', '.content-support > section')
 tabNav.init();
 
-const modalConfig = new Modal('.btn-modal-config', '.close-modal', '.modal');
+const modalConfig = new Modal('.btn-modal-config', '.close-modal', '.modal-config');
 modalConfig.init();
+
+const modalDownload = new Modal('.btn-download', '.close-modal', '.modal-download');
+modalDownload.init();
