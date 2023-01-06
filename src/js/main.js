@@ -1,9 +1,7 @@
 import TabNav from './modules/tab-navegation';
 import Modal from './modules/modal';
-import FileEdit from './modules/file';
+import FileEdit from './modules/file-size-check';
 
-// const TabNav = new TabNav('');
-// TabNav.init();
 
 const tabNav = new TabNav('.nav-options > li', '.content-support > section')
 tabNav.init();
@@ -17,5 +15,5 @@ modalDownload.init();
 const modalUpload = new Modal('.btn-upload', '.close-modal-upload', '.modal-upload');
 modalUpload.init();
 
-const filemain = new FileEdit('#file-upload', '.response-file');
-filemain.init();
+const checkSizeUpload = new FileEdit('#file-upload', '.response-file');
+checkSizeUpload.init();
