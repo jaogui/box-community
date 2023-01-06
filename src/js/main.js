@@ -1,5 +1,6 @@
 import TabNav from './modules/tab-navegation';
 import Modal from './modules/modal';
+import FileEdit from './modules/file';
 
 // const TabNav = new TabNav('');
 // TabNav.init();
@@ -15,3 +16,6 @@ modalDownload.init();
 
 const modalUpload = new Modal('.btn-upload', '.close-modal-upload', '.modal-upload');
 modalUpload.init();
+
+const filemain = new FileEdit('#file-upload', '.response-file');
+filemain.init();
