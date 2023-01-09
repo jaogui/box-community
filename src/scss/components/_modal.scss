@@ -56,7 +56,8 @@
             letter-spacing: 1px;
         }
         select,
-        input {
+        input,
+        textarea {
             border-radius: 4px;
             padding: 12px 10px;
             line-height: 14px;
@@ -68,9 +69,17 @@
             background: transparent;
             color: $gray-default;
             width: 100%;
-            max-width: 250px;
+            // max-width: 250px;
+            resize: none;
             &:focus {
                 border: 1px solid $yellow-light;
+            }
+            &::placeholder {
+                color: $gray-default;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                opacity: 0.7;
+                letter-spacing: 0.5px;
             }
         }
     }
@@ -106,10 +115,16 @@
 
 .modal-download,
 .modal-upload {
-    input {
-        margin: 10px 0px;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    input,
+    textarea {
+        font-family: 'Blinker', sans-serif;
+        margin: 5px 0px;
         width: 100%;
-        max-width: 400px;
     }
     input[type="file"] {
         display: none;
@@ -123,13 +138,11 @@
         display: flex;
         border: 1px solid $gray-default;
         width: 100%;
-        max-width: 450px;
         margin: 5px 0px;
     }
     span {
         font-size: 0.7rem;
         text-transform: unset;
-        margin: 10px 0px;
         color: $yellow-default;
     }
     .close-modal-upload {
