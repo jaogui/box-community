@@ -113,6 +113,13 @@
     }
 }
 
+.modal-config {
+    input,
+    select {
+        max-width: 250px;
+    }
+}
+
 .modal-download,
 .modal-upload {
     form {
