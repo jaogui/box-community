@@ -99,6 +99,9 @@
     &--active {
         display: flex !important;
     }
+    .close-modal {
+        cursor: pointer;
+    }
 }
 
 .modal-download,
@@ -128,5 +131,8 @@
         text-transform: unset;
         margin: 10px 0px;
         color: $yellow-default;
+    }
+    .close-modal-upload {
+        cursor: pointer;
     }
 }

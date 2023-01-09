@@ -10,8 +10,9 @@ export default class FileEdit {
                 this.menssageFile.innerHTML = "Arquivo excedeu tamanho permitido, suportamos até 2 MB.";
                 this.menssageFile.style.color = "#FF1E0F";
             } else {
-                this.menssageFile.innerHTML = "Arquivo adicionado com sucesso!"
+                this.menssageFile.innerHTML = ("Arquivo adicionado com sucesso!" + "</br> Tipo de arquivo: " + this.selectFile.files[0].type);
                 this.menssageFile.style.color = "#F7E752";
+
             }
         });
     }
